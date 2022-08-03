@@ -1,5 +1,6 @@
 # azure_ssh_setup
 
+The purpose of this repository is to act as a guide for setting up a remote virtual machine to run aws tools and docker. This is aimed at giving windows users who might be limited interms of processing power and bandwidth to run docker resources.
 
 How to run the setup
 Set the 
