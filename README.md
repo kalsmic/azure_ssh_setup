@@ -50,6 +50,7 @@ Replace your name , username and email
   sudo chmod +x /usr/local/bin/docker-compose
   sudo groupadd docker
   sudo usermod -aG docker $USER
+  newgrp docker
 ```
 ### Install AWScli
 ```bash
