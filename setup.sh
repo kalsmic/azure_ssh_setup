@@ -10,6 +10,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 sudo groupadd docker
 sudo usermod -aG docker $USER
+newgrp docker
 echo "Installer Docker"
 # Install AWScli
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
