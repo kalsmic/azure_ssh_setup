@@ -61,7 +61,7 @@ Replace your name , username and email
 
 ### Add your local public key to your remote vm authorized keys for auto login
 ```bash
- cat ~/.ssh/id_ed25519.pub | ssh -i ~/.ssh/azure_private_key.pem john@20.118.188.40 'cat >> ~/.ssh/authorized_keys'
+ cat ~/.ssh/id_ed25519.pub | ssh -i ~/.ssh/azure_private_key.pem user@host 'cat >> ~/.ssh/authorized_keys'
  ```
 
 
