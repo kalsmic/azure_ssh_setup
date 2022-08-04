@@ -7,7 +7,23 @@ Set the
 ```bash
   sh setup.sh
  ```
- 
+## command to run on your local machine in a Bash environment
+### Connecting to your vm in the cloud
+```bash
+  ssh -i ~/.ssh/azure_private_key.pem user@host
+```
+
+### Add your local public key to your remote vm authorized keys for auto login 
+```bash
+ cat ~/.ssh/id_ed25519.pub | ssh -i ~/.ssh/azure_private_key.pem user@host 'cat >> ~/.ssh/authorized_keys'
+ ```
+ After this you can just simple login to your cloud vm by running the command below
+ ```bash
+  ssh user@host
+ ```
+ ### Remote Development using SSH
+ [Follow the instructions here to configure remote -ssh](https://code.visualstudio.com/docs/remote/ssh)
+
 ## Break down of the setup file
 ### Install Tools
 ```bash
@@ -57,12 +73,7 @@ Replace your name , username and email
   mv ./kubectl ~/.local/bin/kubectl
 ```
 
-## command to run on your local machine in a Bash environment
 
-### Add your local public key to your remote vm authorized keys for auto login
-```bash
- cat ~/.ssh/id_ed25519.pub | ssh -i ~/.ssh/azure_private_key.pem user@host 'cat >> ~/.ssh/authorized_keys'
- ```
 
 
 ## How to generate SSH KEYS
