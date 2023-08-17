@@ -72,6 +72,13 @@ Replace your name , username and email
   chmod +x kubectl
 ```
 
+### Install nvm
+```bash
+sudo apt install curl 
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+source ~/.bashrc   
+```
+
 
 
 
