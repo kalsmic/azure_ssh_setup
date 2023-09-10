@@ -38,6 +38,13 @@ Replace your name , username and email
   git config --global init.defaultBranch main
 ```
 
+#### Arthur's Github
+```bash
+  git config --global user.name "Arthur Kalule"
+  git config --global user.email "kalulearthur@gmail.com"
+  git config --global user.username "kalsmic"
+  git config --global init.defaultBranch main
+```
 ### Install Docker
 ```bash
   sudo apt install apt-transport-https ca-certificates curl software-properties-common
